@@ -7,16 +7,16 @@
 /***********************/
 
 $logoFont: 'GrandHotel-Regular';
-$sans: 'Gotham-Book', sans-serif;
-$sansItal: 'Gotham-BookItalic', sans-serif;
-$sansBold: 'Gotham-Bold', sans-serif;
-$sansBoldItal: 'Gotham-BoldItalic', sans-serif;
-$sansLight: 'Gotham-Light', sans-serif;
+$sans: 'OpenSans-Book', sans-serif;
+$sansItal: 'OpenSans-BookItalic', sans-serif;
+$sansBold: 'OpenSans-Bold', sans-serif;
+$sansBoldItal: 'OpenSans-BoldItalic', sans-serif;
+$sansLight: 'OpenSans-Light', sans-serif;
 
 $serif: 'Sentinel-Book', serif;
 $serifItal: 'Sentinel-BookItalic', serif;
-$serifBold: 'Sentinel-Bold', serif;
-$serifBoldItal: 'Sentinel-BoldItalic', serif;
+$serifBold: 'Sentinel-Semibold', serif;
+$serifBoldItal: 'Sentinel-SemiboldItalic', serif;
 $serifLight: 'Sentinel-Light', serif;
 
 $display: 'Tungsten-Medium', sans-serif;
@@ -31,6 +31,8 @@ $displayBoldItal: 'Tungsten-BoldItalic', sans-serif;
 
 $blue: #0074e4;
 $bluer: #55a4ff;
+$blueish: #718087;
+$blueBright: #0074e4;
 
 $blueTrans: rgba(0,116,228,.75);
 $darkBlueTrans: rgba(24,52,93,.85);
@@ -38,7 +40,6 @@ $greenTrans: rgba(116,192,5,.75);
 
 $bgLight: #f8fbff;
 $offWhite: #f8fbff;
-
 
 // $black: #212425;
 // $blue: #5ba4e5;
@@ -52,7 +53,7 @@ $slate: #282d31;
 // $neutral: #404041;
 // $color-2: #404041;
 
-$blueish: #718087;
+
 // $greenish: #a6b4b6;
 // $whitish: #eceded;
 // $white: #ffffff;

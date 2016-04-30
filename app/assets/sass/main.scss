@@ -5,6 +5,10 @@
 	text-align: center;
 }
 
+.bold {
+	font-family: $serifBold;
+}
+
 body {
 	font-family: $sans;
 	padding: 0;
@@ -15,9 +19,28 @@ body {
 	}
 }
 
-input {
-	color: #eee;
+a:hover {
+	color: #7BC0FF;
+	text-decoration: none;
 }
+
+input {
+	color: $darkGrey;
+}
+
+
+
+.below-fold {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.btn-main {
+	background: $blue;
+	padding: 0 2.5rem;
+	height: 40px;
+}
+
 
 .row {
 	min-width: 100%;
@@ -37,11 +60,12 @@ input {
 }
 
 .hero { 
-	height: 62vh;
+	height: 75vh;
 	max-width: 125px;
 	h1 {
-		padding-top: 16vh;
+		padding-top: 15vh;
 		font-size: 4em;
+    text-shadow: 0 0 4px #666;
 	} .hero-wrapper {
 		padding-top: 1.25rem;
 	}
@@ -92,14 +116,37 @@ input {
 }
 
 
-.banner { 
+.banner {
 	background-color: rgba(24,52,93,.85);
-	padding: .6667 rem, 2rem;
-	max-width: 125px;
+	padding: .6667rem, 2rem;
 	position: absolute;
 	min-height: 60px;
   bottom: 0;
-	width: 100%
+	width: 100%;
+}
+.banner-wrapper {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	p {
+		font-size: 1.8rem;
+		margin-left: 1.4rem;
+		margin-top: 1.8rem;
+		flex: 1;
+		// margin-left: 2rem;
+	}
+	img {
+		margin-left: 2rem;
+		margin-top: 4px;
+
+	}
+	button {
+		margin-top: 5px;
+		margin-right: 2rem;
+		font-size: 1.5rem;
+	}
 }
 
 
@@ -123,12 +170,13 @@ input {
 	max-width: 125px;
 	img {
 		max-width: 100%;
-		border: 1px solid #242628;
+		overflow: hidden;
+		border: 1px solid #f9f9f9;
 	} 
 	.img-wrapper {
 		position: relative;
 		width: 100%;
-		height: auto;
+		height: 100%;
 	} 
 	.img-wrapper .img-after {
 		position: absolute;
@@ -151,8 +199,8 @@ input {
 	span {
 		font-family: $display;
 		position: absolute;
-		font-size: 3rem;
-		bottom: 10px;
+		font-size: 4rem;
+		bottom: 44px;
 		left: 20px;
     text-shadow: 1px 2px 4px #000;
 	}
@@ -162,12 +210,10 @@ input {
 }
 
 
-
-
-
 .resources {
 	background: #fff; 
-	padding: 0 20px 60px;
+	padding: 0 20px 60px 20px;
+	margin-bottom: 60px;
 	color: $darkGrey;
 	h2 {
 		padding: 40px 0 30px;
@@ -210,9 +256,15 @@ input {
 	margin: 0 auto;
 	padding-top: 15px;
 	position: static;
+	font-family: $sansBold;
 }
-
-
+.caption {
+	padding: 20px;
+	p {
+		margin-bottom: 35px;
+		font-size: 1.5rem;
+	}
+}
 
 
 
@@ -227,12 +279,61 @@ input {
 	background: $bgLight; 
 	padding: 20px;
 	max-width: 125px;
+	margin-top: 30px;
 }
+
 
 .footer { 
 	background: $blueish; 
 	padding: 20px;
 	max-width: 125px;
+  background: $darkGrey;
+}
+.footer-top {
+  font-size: 13px;
+  line-height: 1.5;
+	font-family: $sansBold;
+  text-transform: uppercase;
+}
+.footer-ul {
+	display: flex;
+	justify-content: space-around;
+  li a {
+	  color: #999;
+  } li:hover a {
+  	color: $blueBright;
+  }
+}
+.footer-bottom {
+	display: flex;
+	justify-content: center;
+}
+.copyright {
+	margin-right: 5rem;
+	p {
+		margin-top: .5rem;
+	}
+}
+.social {
+	display: flex;
+	p {
+		margin-right: 1.5rem;
+		margin-top: .5rem;
+	}
+	i {
+		margin: 0 1rem;
+		font-size: 3rem;
+		color: #999;
+	}
+	.fa-facebook-square:hover {
+		color: #3B5998;
+	}
+	.fa-twitter-square:hover {
+		color: #55ACEE;
+	}
+	.fa-google-plus-square:hover {
+		color: #DD4B39;
+	}
 }
 
 
