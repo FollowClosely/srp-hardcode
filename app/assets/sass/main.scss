@@ -122,20 +122,19 @@ input {
 	}
 }
 
-// #hero-pool:after {
+// #hero-pools:after {
 //   content: '';
 //   border-radius: 0!important;
-//   bottom: 10;
 //   background: 0 0!important;
 //   border-color: transparent transparent #fff;
 //   border-style: solid;
 //   border-width: 0 10px 10px;
 //   display: inline-block;
 //   margin-bottom: -1px;
-//   margin-left: -5px;
+//   margin-left: 10px;
 //   top: auto;
 //   position: absolute;
-//   left: 48%;
+//   left: 0%;
 // }
 
 .hero-cta-btn {
@@ -293,7 +292,7 @@ input {
 	margin-bottom: 60px;
 	color: $darkGrey;
 	h2 {
-		padding: 40px 0 30px;
+		padding: 20px 0 30px;
 		text-align: center;
 	}	h3 {
 		color: #fff;
