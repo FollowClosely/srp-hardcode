@@ -1,4 +1,43 @@
 $( function() {
+
+	$('#hero-ul a').on('click', function(){
+
+		$('a.active').removeClass('active');
+		$(this).addClass('active');
+		
+		// add pointer button
+		// $();
+		
+	});
+
+	$('#hero-pools').on('click', function(){
+		// change bg image
+		$('.hero').attr('style',
+			'background: url(assets/images/hero01.jpg); background-size: cover; background-position: center center;');
+	});
+
+	$('#hero-spas').on('click', function(){
+		// change bg image
+		$('.hero').attr('style',
+			'background: url(assets/images/hero02.jpg); background-size: cover; background-position: center center;');
+	});
+
+	$('#hero-firepits').on('click', function(){
+		// change bg image
+		$('.hero').attr('style',
+			'background: url(assets/images/hero03.jpg); background-size: cover; background-position: center center;');
+	});
+
+	$('#hero-patio').on('click', function(){
+		// change bg image
+		$('.hero').attr('style',
+			'background: url(assets/images/hero04.jpg); background-size: cover; background-position: center center;');
+	});
+
+
+
+	
+
 	/**
 	 * Main menu.
 	 */
@@ -8,7 +47,7 @@ $( function() {
 	mainMenu.clone().removeClass().addClass( "rwd-menu" ).prependTo( ".navbar-container nav" );
 
 	// Initialize the superfish menu.
-	mainMenu.superfish();
+	// mainMenu.superfish();
 
 	// Toggle the responsive menu.
 	$( "#rwd-trigger" ).on( "click", function( e ) {
